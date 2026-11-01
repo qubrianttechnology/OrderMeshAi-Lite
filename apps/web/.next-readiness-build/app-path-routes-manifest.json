@@ -1,0 +1,12 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/dashboard/inbox/page": "/dashboard/inbox",
+  "/dashboard/page": "/dashboard",
+  "/icon.svg/route": "/icon.svg",
+  "/page": "/",
+  "/privacy/page": "/privacy",
+  "/sign-in/page": "/sign-in",
+  "/sign-up/page": "/sign-up",
+  "/terms/page": "/terms"
+}

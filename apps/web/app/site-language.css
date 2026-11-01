@@ -1,0 +1,54 @@
+.site-language {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid #dfe8e1;
+  border-radius: 12px;
+  color: #30483a;
+  background: #fffffff2;
+  box-shadow: 0 8px 24px #20352c16;
+  backdrop-filter: blur(12px);
+  font: 500 12px/1.2 "Segoe UI", Arial, sans-serif;
+}
+
+.site-language-label {
+  color: #65766b;
+}
+
+.site-language select {
+  min-width: 88px;
+  padding: 5px 22px 5px 8px;
+  border: 1px solid #dfe8e1;
+  border-radius: 8px;
+  color: #1d4938;
+  background: #f7faf7;
+  font: inherit;
+  cursor: pointer;
+}
+
+.site-language select:focus-visible {
+  outline: 2px solid #238263;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .site-language {
+    right: 10px;
+    bottom: 10px;
+    padding: 7px;
+    border-radius: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-language *,
+  .site-language *::before,
+  .site-language *::after {
+    transition: none !important;
+  }
+}

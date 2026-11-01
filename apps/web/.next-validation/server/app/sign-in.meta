@@ -1,0 +1,34 @@
+{
+  "headers": {
+    "x-nextjs-stale-time": "300",
+    "x-nextjs-prerender": "1",
+    "x-next-cache-tags": "_N_T_/layout,_N_T_/sign-in/layout,_N_T_/sign-in/page,_N_T_/sign-in"
+  },
+  "segmentPaths": [
+    "/_tree",
+    "/_full",
+    "/sign-in/__PAGE__"
+  ],
+  "prefetchHints": {
+    "hints": 64,
+    "slots": {
+      "children": {
+        "hints": 96,
+        "slots": {
+          "children": {
+            "hints": 160,
+            "slots": null
+          }
+        }
+      }
+    }
+  },
+  "routeCache": {
+    "key": "/route-cache/APP_PAGE/6e3af8001bc882a2f73ad5c936655015d89483b1a548f864f18cbae3136de108/$/sign-in",
+    "owner": {
+      "kind": "APP_PAGE",
+      "sourceRoute": "/sign-in/page"
+    },
+    "isFallback": false
+  }
+}

@@ -1,0 +1,30 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/0umf92h1sb77c.js"
+3:I[39756,["$2"],"default"]
+4:I[37457,["$2"],"default"]
+b:"/_next/static/chunks/2n5qeheznvl4u.js"
+c:I[22016,["$2","$b"],""]
+d:I[97367,["$2"],"OutletBoundary"]
+e:"$Sreact.suspense"
+11:"ViewportBoundary"
+12:I[97367,["$2"],"$11"]
+13:"MetadataBoundary"
+14:I[97367,["$2"],"$13"]
+15:I[27201,["$2"],"IconMark"]
+:HL["/_next/static/chunks/0mjuqs-tndez3.css","style"]
+:HL["/_next/static/chunks/03_tuuuw9wwu0.css","style"]
+6:X
+9:X
+9:C
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"className":"om om-notice","children":["$","div",null,{"className":"om-container","children":[["$","$Lc",null,{"href":"/","className":"om-text-button","children":"← Back to OrderMesh"}],["$","span",null,{"className":"om-eyebrow","children":"ORDERMESH AI · PUBLIC INFORMATION"}],["$","h1",null,{"children":"Terms of Service"}],["$","p",null,{"className":"om-notice-banner","children":"Final commercial terms have not yet been supplied for publication. The following product and subscription information is provided for clarity; it is not a complete service agreement."}],[["$","h2",null,{"children":"Current product scope"}],["$","p",null,{"children":"OrderMesh provides customer, catalog, stock and order management with Sinhala and English text extraction. Drafts require human review and confirmation. Image and voice extraction are not supported. Live WhatsApp and payment integrations require provider setup and verification."}],["$","h2",null,{"children":"Subscription information"}],["$","p",null,{"children":"The existing Starter / Lite plan is LKR 7,400 per month, with a 15-day application trial and a default allowance of 500 orders per month. Workspace-specific allowances apply. Growth and Business Pro are planned tiers without published prices or entitlements."}],["$","h2",null,{"children":"Demonstrations and decisions"}],["$","p",null,{"children":"Website examples are fictional simulations, not customer transactions or performance claims. Check extracted information against the original customer request and your catalog before confirming an order."}],["$","h2",null,{"children":"Information still to be published"}],["$","p",null,{"children":"Final terms must define the contracting entity, payment and refund conditions, support commitments and other commercial conditions. Contact the team for these details before subscribing. No unlimited usage or guaranteed uptime is offered on this page."}]],["$","h2",null,{"children":"Contact"}],["$","p",null,{"children":[["$","a",null,{"href":"mailto:info@ordermesh.com","children":"info@ordermesh.com"}]," ·"," ",["$","a",null,{"href":"tel:+94722616616","children":"0722 616 616"}]]}]]}]}],[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/03_tuuuw9wwu0.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/2n5qeheznvl4u.js","async":true}]],["$","$Ld",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@f"}]}]]}],"p":"$@10","v":null,"s":"$6"}}]]
+7:[["children",{"s":"terms","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}]}]]}],"p":"$@8","v":"$9","s":"$6"},"c":"$Qa"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0mjuqs-tndez3.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0umf92h1sb77c.js","async":true}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L3",null,{"parallelRouterKey":"children","template":["$","$L4",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}]}]}]]}],"p":"$@5","v":null,"s":"$6"},"c":"$Q7"},"h":{"r":["$","$1","h",{"children":[null,["$","$L12",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L14",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Service information | OrderMesh AI"}],["$","meta","1",{"name":"description","content":"One workspace for customer conversations, orders and service requests."}],["$","link","2",{"rel":"icon","href":"/icon.svg?icon.077vhnomma43p.svg","sizes":"any","type":"image/svg+xml"}],["$","$L15","3",{}]]}]}],null]}],null]}],"p":"$@16","v":null,"s":"$6"}},"a":"$@17","u":"$@18","b":"K9z8M_PmhpZak6O6_fyZo"}
+f:null
+6:300
+18:true
+6:C
+17:0
+8:"$undefined"
+5:"$undefined"
+16:"$undefined"
+10:"$undefined"

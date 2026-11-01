@@ -1,0 +1,56 @@
+name: OrderMesh verification
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_HOST_AUTH_METHOD: trust
+          POSTGRES_DB: ordermesh_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - run: python -m venv .venv
+      - run: .venv/bin/python -m pip install -r services/api/requirements.lock
+      - name: Migrate PostgreSQL and run API/security/concurrency tests
+        working-directory: services/api
+        env:
+          DATABASE_URL: postgresql+psycopg://postgres@localhost:5432/ordermesh_test
+          TEST_POSTGRES_URL: postgresql+psycopg://postgres@localhost:5432/ordermesh_test
+          TEST_POSTGRES_DISPOSABLE: "YES"
+        run: |
+          ../../.venv/bin/python -m alembic upgrade head
+          ../../.venv/bin/python -m alembic check
+          ../../.venv/bin/python -m ruff check app tests
+          ../../.venv/bin/python -m pytest tests -q
+      - run: npm ci
+        working-directory: apps/web
+      - run: npm run lint
+        working-directory: apps/web
+      - run: npm run typecheck
+        working-directory: apps/web
+      - run: npm run build
+        working-directory: apps/web
+      - run: npx playwright install --with-deps chromium
+        working-directory: apps/web
+      - run: npm run test:e2e
+        working-directory: apps/web
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-test-artifacts
+          path: apps/web/test-results

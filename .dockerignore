@@ -1,0 +1,16 @@
+.git
+.venv
+.npm-cache
+.e2e
+**/.env
+**/.env.local
+**/node_modules
+**/.next
+**/.next-e2e
+**/__pycache__
+**/*.db
+**/test-results
+**/playwright-report
+**/.pytest_cache
+**/pytest-cache-files-*
+**/*.tsbuildinfo
