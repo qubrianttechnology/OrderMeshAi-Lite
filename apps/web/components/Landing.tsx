@@ -1038,6 +1038,12 @@ export default function Landing() {
       <main id="main">
         <section id="home" className="om-hero">
           <div className="om-hero-glow" />
+          <div className="om-atmosphere" aria-hidden="true">
+            <i className="om-orb om-orb-a" />
+            <i className="om-orb om-orb-b" />
+            <i className="om-orb om-orb-c" />
+            <span className="om-grain" />
+          </div>
           <div className="om-container om-hero-copy">
             <div className="om-pill">
               <span /> BUILT FOR THE WAY SRI LANKA DOES BUSINESS{" "}

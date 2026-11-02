@@ -4011,3 +4011,221 @@
 .basic-settings-fields { border: 0; padding: 0; margin: 0; display: grid; gap: 1rem; }
 .inbox-management-actions { display: flex; flex-wrap: wrap; gap: .5rem; padding: .75rem 1.25rem; border-bottom: 1px solid var(--border, #e5e7eb); }
 @media (max-width: 760px) { .account-settings-columns { grid-template-columns: 1fr; gap: 1.5rem; } }
+
+/* Premium workspace: forest glass instead of orange POS chrome */
+.app-shell {
+  --dash-bg: #f3f7f4;
+  --dash-border: #d7e4dc;
+  --dash-text: #163028;
+  --dash-muted: #66786f;
+  --green: #1a7a5c;
+  color: var(--dash-text);
+  background:
+    radial-gradient(ellipse at 88% -10%, #d7f3e8 0, transparent 36%),
+    radial-gradient(ellipse at 8% 90%, #e7e9ff 0, transparent 32%),
+    var(--dash-bg);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+}
+.app-shell::before {
+  display: block;
+  opacity: 0.28;
+  background-image: radial-gradient(#1a7a5c14 0.8px, transparent 0.8px);
+  background-size: 22px 22px;
+}
+.app-shell .sidebar {
+  color: #4d655b;
+  background: linear-gradient(180deg, #fffffff8, #f7fbf8f4);
+  border-right: 1px solid var(--dash-border);
+  box-shadow: 14px 0 40px #16302808;
+  backdrop-filter: blur(18px);
+}
+.app-shell .sidebar .brand {
+  color: #163028;
+}
+.app-shell .sidebar .brand-icon {
+  color: #04241b;
+  background: linear-gradient(145deg, #7af0c8, #1a7a5c);
+  box-shadow: 0 8px 20px #1a7a5c2e;
+}
+.app-shell .sidebar nav > button.active,
+.app-shell .settings-link.active {
+  color: #0f5d46;
+  background: linear-gradient(100deg, #e7f8f0, #eef6f2);
+  box-shadow: inset 3px 0 #1a7a5c, inset 0 0 0 1px #1a7a5c18;
+}
+.app-shell .sidebar nav > button:hover,
+.app-shell .settings-link:hover {
+  color: #163028;
+  background: #eef6f2;
+}
+.app-shell .workspace-avatar,
+.app-shell .avatar {
+  color: #0f5d46;
+  background: #e4f6ee;
+  border-color: #cfe8da;
+}
+.app-shell .topbar {
+  color: #5b6f66;
+  background: #fffffff0;
+  border-bottom: 1px solid var(--dash-border);
+  backdrop-filter: blur(16px);
+}
+.app-shell .page-heading h1,
+.app-shell .panel-heading h2,
+.app-shell .panel h2,
+.app-shell .list-toolbar h2,
+.app-shell .settings-grid h2,
+.app-shell .breadcrumb strong {
+  color: #163028;
+}
+.app-shell .eyebrow {
+  color: #1a7a5c;
+}
+.app-shell .button.primary {
+  color: #fff;
+  border-color: #1a7a5c;
+  background: linear-gradient(115deg, #24936e, #166a50);
+  box-shadow: 0 8px 18px #1a7a5c22;
+}
+.app-shell .button.primary:hover {
+  background: linear-gradient(115deg, #1d8563, #125844);
+  box-shadow: 0 12px 24px #1a7a5c30;
+  transform: translateY(-1px);
+}
+.app-shell .button:hover {
+  border-color: #b7d8c8;
+  background: #f3faf6;
+}
+.app-shell .topbar-search:focus-within {
+  border-color: #7ad9b8;
+  box-shadow: 0 0 0 3px #1a7a5c18;
+}
+.app-shell .icon-button:hover,
+.app-shell .sidebar-collapse:hover {
+  color: #0f5d46;
+  background: #e7f8f0;
+}
+.app-shell .metric,
+.app-shell .panel,
+.app-shell .insight-panel {
+  border: 1px solid var(--dash-border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, #ffffff, #fbfdfb);
+  box-shadow: 0 10px 28px #1630280a, inset 0 1px #fff;
+}
+.app-shell .metric {
+  position: relative;
+  overflow: hidden;
+}
+.app-shell .metric::after {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 3px;
+  content: "";
+  background: linear-gradient(90deg, #1a7a5c, #7af0c8 55%, #8b7cff);
+  opacity: 0.85;
+}
+.app-shell .metric:hover,
+.app-shell .panel:hover {
+  border-color: #b7d8c8;
+  box-shadow: 0 18px 36px #16302812;
+  transform: translateY(-3px);
+}
+.app-shell .assistant-card {
+  color: #e8fff6;
+  border: 1px solid #1a7a5c44;
+  background:
+    radial-gradient(circle at 100% 0, #3ee0b033, transparent 46%),
+    linear-gradient(145deg, #0f3d32, #163d4a);
+  box-shadow: 0 16px 40px #0b2a2218;
+}
+.app-shell .assistant-card h2 {
+  color: #f4fff9;
+}
+.app-shell .assistant-card p,
+.app-shell .assistant-card > small {
+  color: #c5e6d8;
+}
+.app-shell .assistant-card button {
+  color: #04241b;
+  background: linear-gradient(100deg, #7af0c8, #d7e4ff);
+}
+.app-shell .connection > span,
+.app-shell .attention-dot {
+  background: #1a7a5c;
+  box-shadow: 0 0 10px #1a7a5c55;
+}
+.app-shell[data-theme="dark"] {
+  --dash-bg: #07110e;
+  --dash-border: #1d322b;
+  --dash-text: #e8f6ef;
+  --dash-muted: #93ada2;
+  background:
+    radial-gradient(ellipse at 88% 0, #1a7a5c22, transparent 34%),
+    var(--dash-bg);
+}
+.app-shell[data-theme="dark"] .sidebar {
+  color: #b7cec4;
+  background: linear-gradient(180deg, #0c1a16f5, #081310f5);
+  border-right-color: #1d322b;
+}
+.app-shell[data-theme="dark"] .sidebar .brand,
+.app-shell[data-theme="dark"] .page-heading h1,
+.app-shell[data-theme="dark"] .panel-heading h2,
+.app-shell[data-theme="dark"] .panel h2,
+.app-shell[data-theme="dark"] .breadcrumb strong {
+  color: #e8f6ef;
+}
+.app-shell[data-theme="dark"] .topbar,
+.app-shell[data-theme="dark"] .metric,
+.app-shell[data-theme="dark"] .panel,
+.app-shell[data-theme="dark"] .insight-panel {
+  color: #e8f6ef;
+  background: linear-gradient(180deg, #10211c, #0c1915);
+  border-color: #1d322b;
+}
+.app-shell[data-theme="dark"] .sidebar nav > button.active,
+.app-shell[data-theme="dark"] .settings-link.active {
+  color: #7af0c8;
+  background: #12362c;
+}
+@keyframes dash-card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes dash-bar-in {
+  from {
+    transform: scaleY(0.12);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .app-shell .metrics .metric {
+    animation: dash-card-in 560ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .app-shell .metrics .metric:nth-child(1) {
+    animation-delay: 40ms;
+  }
+  .app-shell .metrics .metric:nth-child(2) {
+    animation-delay: 90ms;
+  }
+  .app-shell .metrics .metric:nth-child(3) {
+    animation-delay: 140ms;
+  }
+  .app-shell .metrics .metric:nth-child(4) {
+    animation-delay: 190ms;
+  }
+  .app-shell .chart-bar {
+    transform-origin: bottom;
+    animation: dash-bar-in 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+}
